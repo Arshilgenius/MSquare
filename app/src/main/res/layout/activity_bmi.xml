@@ -13,15 +13,18 @@
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/Weight"
     android:hint= "Enter Weight" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/Height"
         android:hint= "Enter Height" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:onClick="calc"
+        android:text="Calculate"/>
 
 
 </LinearLayout>
