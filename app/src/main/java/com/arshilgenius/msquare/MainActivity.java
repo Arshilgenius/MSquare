@@ -17,15 +17,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void BMI(View view){
-        Intent intent2= new Intent(getApplicationContext(),BMI.class);
+        Intent intent2= new Intent(getApplicationContext(),BMIActivity.class);
         startActivity(intent2);}
 
     public void aboutus(View view){
-        Intent intent3= new Intent(getApplicationContext(),BMI.class);
+        Intent intent3= new Intent(getApplicationContext(),About_us.class);
         startActivity(intent3);}
 
     public void depression(View view){
-        Intent intent4= new Intent(getApplicationContext(),Depression.class);
+        Intent intent4= new Intent(getApplicationContext(),DepressionActivity.class);
         startActivity(intent4);}
 
     public void virtualbp(View view){

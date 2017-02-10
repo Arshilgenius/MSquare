@@ -3,11 +3,11 @@ package com.arshilgenius.msquare;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Depression extends AppCompatActivity {
+public class BMIActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_depression);
+        setContentView(R.layout.activity_bmi);
     }
 }
