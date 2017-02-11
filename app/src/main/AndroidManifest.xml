@@ -30,18 +30,21 @@
         <activity
             android:name=".DepressionActivity"
             android:label="FIRST AID" />
-        <activity android:name=".Burns"
-            android:label="Burns First Aid"/>
-        <activity android:name=".fainting"
-            android:label="Fainting  First Aid"/>
-        <activity android:name=".fracture"
-            android:label="Fracture First Aid"/>
-        <activity android:name=".heartattack"
-            android:label="HeartAttack First Aid"/>
-        <activity android:name=".poisson"
-            android:label="Poisson First Aid"/>
-        <activity android:name=".sprain"
-            android:label="Poison First Aid"/>
+        <activity
+            android:name=".Burns"
+            android:label="Burns First Aid" />
+        <activity
+            android:name=".fainting"
+            android:label="Fainting  First Aid" />
+        <activity
+            android:name=".fracture"
+            android:label="Fracture First Aid" />
+        <activity
+            android:name=".heartattack"
+            android:label="HeartAttack First Aid" />
+        <activity
+            android:name=".sprain"
+            android:label="Poison First Aid" />
     </application>
 
 </manifest>
