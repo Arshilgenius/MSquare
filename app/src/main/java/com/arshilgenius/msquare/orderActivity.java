@@ -11,15 +11,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+public class orderActivity extends AppCompatActivity {
+    int orderValue = 0;
 
-    public class orderActivity extends AppCompatActivity {
-        int orderValue = 0;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_order);
+    }
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_order);
-        }
     public void increment(View v) {
         orderValue = orderValue + 1;
         if (orderValue >= 100)

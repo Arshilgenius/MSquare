@@ -12,8 +12,5 @@ public class sprain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sprain);
     }
-    public void sprain(View view){
-        Intent intent = new Intent(getApplicationContext(),sprain.class);
-        startActivity(intent);
-    }
+
 }
