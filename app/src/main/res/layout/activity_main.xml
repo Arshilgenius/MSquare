@@ -60,7 +60,7 @@
         android:textStyle="normal"
         android:background="#FF9800"
         android:textSize="22sp"
-        android:text="Depression"
+        android:text="FIRST AID"
         android:textColor="@android:color/white"
         android:layout_below="@id/Virtualbp"/>
     <Button

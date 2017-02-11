@@ -29,7 +29,7 @@
             android:label="Body Mass Index" />
         <activity
             android:name=".DepressionActivity"
-            android:label="Depression Calculator" />
+            android:label="FIRST AID" />
         <activity android:name=".Burns"
             android:label="Burns First Aid"/>
         <activity android:name=".fainting"
