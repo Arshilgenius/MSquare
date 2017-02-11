@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class DepressionActivity extends AppCompatActivity {
 
@@ -13,7 +14,10 @@ public class DepressionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_depression);
     }
-
+public void burns(View view){
+    Intent intent = new Intent(getApplicationContext(),Burns.class);
+    startActivity(intent);
+}
     }
 
 
