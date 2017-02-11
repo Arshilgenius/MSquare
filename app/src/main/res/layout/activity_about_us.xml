@@ -7,8 +7,47 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.arshilgenius.msquare.About_us">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+        android:text="Name : Arshil KHan"
+        android:padding="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one"
+        android:padding="20dp"
+        android:id="@+id/two"
+        android:text="Arshilgenius@gmail.com" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/two"
+        android:id="@+id/three"
+        android:text="Arshilgenius.com"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/four"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:layout_toRightOf="@id/one"
+        android:text="Zain Abedin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/five"
+        android:paddingLeft="60dp"
+        android:paddingTop="40dp"
+        android:layout_toRightOf="@id/two"
+        android:layout_below="@id/four"
+        android:text="zain" />
+
 
 
 
