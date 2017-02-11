@@ -13,11 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your Systolic BP"
+        android:inputType="numberDecimal"
         android:id="@+id/up" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/down"
+        android:inputType="number"
         android:layout_below="@id/up"
         android:hint="Enter Your Diastolic BP"/>
     <Button
