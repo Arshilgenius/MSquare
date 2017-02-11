@@ -24,14 +24,14 @@ import android.widget.Toast;
         orderValue = orderValue + 1;
         if (orderValue >= 100)
             orderValue = 100;
-        Toast.makeText(this, "No of Coffee's cannot be more than 100", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "No of Medicine cannot be more than 100", Toast.LENGTH_SHORT).show();
         displayno(orderValue);
     }
 
     public void decrement(View v) {
         orderValue = orderValue - 1;
         if (orderValue <= 0) {
-            Toast.makeText(this, "No of Coffee's cannot be less than 0", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No of Medicine cannot be less than 0", Toast.LENGTH_SHORT).show();
             orderValue = 0;
         }
         displayno(orderValue);
@@ -44,8 +44,8 @@ import android.widget.Toast;
         String order = "Name : " + xxyy;
         order += "\n Quantity :  " + orderValue;
         order += "\n Price : Rs " + xxxy;
-        order += "\n Whipped Cream?  " + xyz;
-        order += "\n Chocolate?  " + xyzz;
+        order += "\n Cash on Delivery  " + xyz;
+        order += "\n Debit/Credit Card  " + xyzz;
         order += "\n Thank You!";
         return order;
     }
@@ -73,7 +73,7 @@ import android.widget.Toast;
         String priceMessage = orderSummary(price, haschecked, hascheckedtwo, textvalue);
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Just Java Coffee Order By : " + textvalue);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Medicine Ordered : " + textvalue);
         intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
