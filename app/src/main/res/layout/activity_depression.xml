@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_depression"
     android:layout_width="match_parent"
@@ -8,107 +8,57 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.arshilgenius.msquare.DepressionActivity">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/tv1"
-    android:textSize="20sp"
-    android:text="Q.1 "/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/b1"
-        android:layout_below="@id/tv1"
-        android:text="Yes"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/b2"
-        android:layout_below="@id/tv1"
-        android:text="No"
-        android:layout_toRightOf="@id/b1"/>
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv2"
-        android:layout_below="@id/b1"
-        android:textSize="20sp"
-        android:text="Q.2 "/>
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b3"
-        android:layout_below="@id/tv2"
-        android:text="Yes"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/b4"
-        android:layout_below="@id/tv2"
-        android:text="No"
-        android:layout_toRightOf="@id/b1"/>
+        android:text="BURNS"
+        android:textSize="30sp"
+        android:onClick="burns"/>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv3"
-        android:layout_below="@id/b3"
-        android:textSize="20sp"
-        android:text="Q.3 "/>
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b5"
-        android:layout_below="@id/tv3"
-        android:text="Yes"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/b6"
-        android:layout_below="@id/tv3"
-        android:text="No"
-        android:layout_toRightOf="@id/b1"/>
+        android:text="FRACTURES"
+        android:textSize="30sp"
+        android:onClick="fractures"/>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv4"
-        android:layout_below="@id/b5"
-        android:textSize="20sp"
-        android:text="Q.4 "/>
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b7"
-        android:layout_below="@id/tv4"
-        android:text="Yes"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/b8"
-        android:layout_below="@id/tv4"
-        android:text="No"
-        android:layout_toRightOf="@id/b1"/>
+        android:text="POISONING"
+        android:onClick="Poisoning"
+        android:textSize="30sp"/>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv5"
-        android:layout_below="@id/b7"
-        android:textSize="20sp"
-        android:text="Q.4 "/>
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b9"
-        android:layout_below="@id/tv5"
-        android:text="Yes"/>
-    <Button
+        android:text="CUTS"
+        android:onClick="Cuts"
+        android:textSize="30sp"/>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b10"
-        android:layout_below="@id/tv5"
-        android:text="No"
-        android:layout_toRightOf="@id/b1"/>
+        android:text="FAINTING"
+        android:onClick="fainting"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEART ATTACK"
+        android:onClick="HeartAttack"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPRAIN"
+        android:onClick="Sprain"
+        android:textSize="30sp"/>
 
 
 
-</RelativeLayout>
+
+
+
+
+
+</LinearLayout>

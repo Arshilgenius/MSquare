@@ -1,7 +1,10 @@
 package com.arshilgenius.msquare;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class DepressionActivity extends AppCompatActivity {
 
@@ -10,4 +13,7 @@ public class DepressionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_depression);
     }
-}
+
+    }
+
+

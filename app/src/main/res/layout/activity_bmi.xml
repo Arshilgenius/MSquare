@@ -27,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate"
+        android:background="#FF9800"
         android:onClick="bmiCalculate"
         android:id="@+id/calcbutton"
         android:layout_below="@id/ht"/>
