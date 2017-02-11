@@ -15,6 +15,9 @@ public class virtualbp extends AppCompatActivity {
     public void bpmeasure(View view){
          EditText e = (EditText) findViewById(R.id.up);
         int upper = Integer.parseInt(e.getText().toString());
+        EditText e2 = (EditText) findViewById(R.id.down);
+        int down = Integer.parseInt(e2.getText().toString());
+
 
     }
 
