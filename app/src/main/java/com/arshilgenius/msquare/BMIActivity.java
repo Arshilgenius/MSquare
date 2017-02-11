@@ -2,6 +2,7 @@ package com.arshilgenius.msquare;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
 
 public class BMIActivity extends AppCompatActivity {
 
@@ -10,4 +11,7 @@ public class BMIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi);
     }
+    EditText wt = (EditText) findViewById(R.id.wt) ;
+    int wt1 = Integer.parseInt( wt.getText().toString() );
+
 }
