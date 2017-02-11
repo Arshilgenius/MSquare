@@ -26,6 +26,10 @@ public class virtualbp extends AppCompatActivity {
             TextView t = (TextView) findViewById(R.id.virtualbptv);
             t.setText("Stage 1 Hypertension");
         }
+       else if(upper==0&&down==0){
+           TextView t = (TextView) findViewById(R.id.virtualbptv);
+           t.setText("Enter Something");
+       }
        else if(upper>120){
            TextView t = (TextView) findViewById(R.id.virtualbptv);
            t.setText("PreHypertension");

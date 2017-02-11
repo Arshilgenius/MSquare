@@ -44,7 +44,7 @@
             android:label="HeartAttack First Aid" />
         <activity
             android:name=".sprain"
-            android:label="Poison First Aid" />
+            android:label="Sprain First Aid" />
     </application>
 
 </manifest>

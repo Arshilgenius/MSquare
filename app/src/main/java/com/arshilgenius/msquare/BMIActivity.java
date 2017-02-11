@@ -35,9 +35,14 @@ public class BMIActivity extends AppCompatActivity {
             TextView v = (TextView) findViewById(R.id.bmitv);
             v.setText("Normal");
 
-        } else if (bmi < 30) {
+
+        } else if (bmi==0) {
+            TextView v = (TextView) findViewById(R.id.bmitv);
+            v.setText("Enter Something");}
+        else if (bmi < 30) {
             TextView v = (TextView) findViewById(R.id.bmitv);
             v.setText("OverWeight");
+
         } else {
             TextView v = (TextView) findViewById(R.id.bmitv);
             v.setText("Obese");

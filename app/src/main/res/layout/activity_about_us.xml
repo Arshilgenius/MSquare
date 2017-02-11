@@ -14,50 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/one"
-        android:text="Name : Arshil KHan"
+        android:text="@string/info"
         android:textSize="15sp"
         android:textStyle="bold"
         android:padding="20dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/one"
-        android:padding="20dp"
-        android:textSize="15sp"
-        android:id="@+id/two"
-        android:textStyle="bold"
-        android:text="Arshilgenius@gmail.com" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:textStyle="bold"
-        android:layout_below="@id/two"
-        android:id="@+id/three"
-        android:text="Arshilgenius.com"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/four"
-        android:paddingLeft="60dp"
-        android:paddingTop="20dp"
-        android:layout_toRightOf="@id/one"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:text="Zain Abedin"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/five"
-        android:paddingLeft="20dp"
-        android:paddingTop="40dp"
-        android:textStyle="bold"
-        android:layout_toRightOf="@id/two"
-        android:layout_below="@id/four"
-        android:textSize="15sp"
-        android:text="zain@gmailc.com" />
-
-
-
 
 </RelativeLayout>
