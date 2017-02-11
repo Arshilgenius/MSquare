@@ -31,7 +31,11 @@
             android:name=".DepressionActivity"
             android:label="Depression Calculator" />
         <activity android:name=".Burns" />
-        <activity android:name=".fainting"></activity>
+        <activity android:name=".fainting" />
+        <activity android:name=".fracture" />
+        <activity android:name=".heartattack" />
+        <activity android:name=".poisson" />
+        <activity android:name=".sprain"></activity>
     </application>
 
 </manifest>
