@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class virtualbp extends AppCompatActivity {
 
@@ -17,7 +18,22 @@ public class virtualbp extends AppCompatActivity {
         int upper = Integer.parseInt(e.getText().toString());
         EditText e2 = (EditText) findViewById(R.id.down);
         int down = Integer.parseInt(e2.getText().toString());
-
+       if(upper>160&&down>100){
+           TextView t = (TextView) findViewById(R.id.virtualbptv);
+           t.setText("Stage 2 Hypertension");
+       }
+        else if(upper>140&&down<90){
+            TextView t = (TextView) findViewById(R.id.virtualbptv);
+            t.setText("Stage 1 Hypertension");
+        }
+       else if(upper>120&&down<80){
+           TextView t = (TextView) findViewById(R.id.virtualbptv);
+           t.setText("PreHypertension");
+       }
+       else if(upper<=120&&down<=80){
+           TextView t = (TextView) findViewById(R.id.virtualbptv);
+           t.setText("Normal");
+       }
 
     }
 
