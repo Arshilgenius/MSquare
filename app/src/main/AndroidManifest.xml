@@ -23,7 +23,7 @@
             android:label="Virtual BP" />
         <activity
             android:name=".About_us"
-            android:label="About US" />
+            android:label="About Us" />
         <activity
             android:name=".BMIActivity"
             android:label="Body Mass Index" />
