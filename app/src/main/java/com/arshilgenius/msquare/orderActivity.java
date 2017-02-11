@@ -38,18 +38,28 @@ import android.widget.Toast;
 
     }
 
-    public String orderSummary( boolean xyz, boolean xyzz, String xxyy) {
+    public String orderSummary(int xxxy, boolean xyz, boolean xyzz, String xxyy) {
 
 
-        String order = "Name : " + xxyy;
+        String order = "Medicine Name : " + xxyy;
         order += "\n Quantity :  " + orderValue;
+        order += "\n Price of COD : " + xxxy;
         order += "\n Cash on Delivery  " + xyz;
-        order += "\n Debit/Credit Card  " + xyzz;
+        order += "\n Debit Card  " + xyzz;
         order += "\n Thank You!";
         return order;
     }
 
+    public int calculatePrice(Boolean a, Boolean b) {
+        int pricecalulated = 0;
 
+        if (a == true)
+            pricecalulated += 100;
+        if (b == true)
+            pricecalulated += 0;
+        return pricecalulated * orderValue;
+
+    }
 
     public void displayPrice(View v) {
 
@@ -59,10 +69,11 @@ import android.widget.Toast;
         Boolean hascheckedtwo = checktwo.isChecked();
         EditText text = (EditText) findViewById(R.id.textfield);
         String textvalue = text.getText().toString();
-        String priceMessage = orderSummary(haschecked, hascheckedtwo, textvalue);
+        int price = calculatePrice(haschecked, hascheckedtwo);
+        String priceMessage = orderSummary(price, haschecked, hascheckedtwo, textvalue);
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Medicine Ordered : " + textvalue);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Medicine Ordered: " + textvalue);
         intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
