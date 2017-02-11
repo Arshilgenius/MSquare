@@ -15,12 +15,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BURNS"
+        android:padding="25dp"
+        android:textColor="@android:color/white"
+        android:background="#FF9800"
         android:textSize="30sp"
         android:onClick="burns"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FRACTURES"
+        android:background="#FF9800"
+        android:textColor="@android:color/white"
+        android:padding="25dp"
         android:textSize="30sp"
         android:onClick="fracture"/>
 
@@ -29,19 +35,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FAINTING"
+        android:padding="20dp"
+        android:background="#FF9800"
         android:onClick="fainting"
+        android:textColor="@android:color/white"
         android:textSize="30sp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HEART ATTACK"
+        android:padding="25dp"
+        android:textColor="@android:color/white"
         android:onClick="heartattack"
+        android:background="#FF9800"
         android:textSize="30sp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SPRAIN"
         android:onClick="sprain"
+        android:background="#FF9800"
+        android:textColor="@android:color/white"
+        android:padding="25dp"
         android:textSize="30sp"/>
 
 
