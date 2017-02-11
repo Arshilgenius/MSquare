@@ -46,7 +46,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop=""
                 android:text="Cash On Delivery"
                 android:textSize="20sp"
                 android:textStyle="bold" />
