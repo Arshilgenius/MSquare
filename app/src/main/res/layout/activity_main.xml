@@ -8,57 +8,73 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#000000"
+    android:background="#ffffff"
+
     tools:context="com.arshilgenius.msquare.MainActivity">
-    <ImageView
+    <Button
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/arshil"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:id="@+id/order"
-        android:onClick="order"
-        android:scaleType="centerCrop" />
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:background="#FF9800"
+        android:text="ORDER MEDICINE"
+        android:textColor="@android:color/white"
+        android:onClick="order" />
 
-    <ImageView
+    <Button
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="10dp"
         android:id="@+id/Virtualbp"
         android:onClick="virtualbp"
-        android:src="@drawable/arshil"
+        android:textStyle="normal"
         android:layout_alignParentLeft="true"
-        android:scaleType="centerCrop"
+        android:textSize="25sp"
+        android:background="#FF9800"
+        android:text="Virtual BP"
+        android:textColor="@android:color/white"
         android:layout_below="@id/order"/>
-    <ImageView
+    <Button
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/arshil"
         android:layout_alignParentRight="true"
         android:id="@+id/BMI"
         android:onClick="BMI"
-        android:scaleType="centerCrop"
+        android:textStyle="normal"
+        android:background="#FF9800"
+        android:textSize="25sp"
+        android:text="BMI"
+        android:textColor="@android:color/white"
         android:layout_below="@id/order"/>
-    <ImageView
+    <Button
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="10dp"
         android:id="@+id/depression"
-        android:src="@drawable/arshil"
         android:layout_alignParentLeft="true"
-        android:scaleType="centerCrop"
         android:onClick="depression"
+        android:textStyle="normal"
+        android:background="#FF9800"
+        android:textSize="22sp"
+        android:text="Depression"
+        android:textColor="@android:color/white"
         android:layout_below="@id/Virtualbp"/>
-    <ImageView
+    <Button
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/arshil"
         android:onClick="aboutus"
         android:id="@+id/AboutUs"
         android:layout_alignParentRight="true"
-        android:scaleType="centerCrop"
+        android:textStyle="normal"
+        android:background="#FF9800"
+        android:textSize="22sp"
+        android:text="About US"
+        android:textColor="@android:color/white"
         android:layout_below="@id/BMI"/>
 
 
