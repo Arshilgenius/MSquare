@@ -12,22 +12,31 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Weight"
+        android:hint="Enter Weight (In Kg)"
         android:id="@+id/wt"
-        android:inputType="number"/>
+        android:inputType="numberDecimal"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_below="@id/wt"
         android:layout_height="wrap_content"
-        android:hint="Enter Height"
+        android:hint="Enter Height  (in M)"
         android:id="@+id/ht"
-        android:inputType="number"/>
+        android:inputType="numberDecimal"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate"
+        android:onClick="bmiCalculate"
+        android:id="@+id/calcbutton"
         android:layout_below="@id/ht"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bmitv"
+        android:layout_below="@id/calcbutton"
+        android:paddingTop="30dp"
+        android:textSize="50sp"/>
 
 
 </RelativeLayout>
