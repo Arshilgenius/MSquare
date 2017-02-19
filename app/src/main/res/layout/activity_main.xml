@@ -13,7 +13,7 @@
     tools:context="com.arshilgenius.msquare.MainActivity">
     <Button
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="160dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:id="@+id/order"
@@ -26,7 +26,7 @@
 
     <Button
         android:layout_width="160dp"
-        android:layout_height="120dp"
+        android:layout_height="140dp"
         android:layout_marginTop="10dp"
         android:id="@+id/Virtualbp"
         android:onClick="virtualbp"
@@ -39,7 +39,7 @@
         android:layout_below="@id/order"/>
     <Button
         android:layout_width="160dp"
-        android:layout_height="120dp"
+        android:layout_height="140dp"
         android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
         android:id="@+id/BMI"
@@ -52,7 +52,7 @@
         android:layout_below="@id/order"/>
     <Button
         android:layout_width="160dp"
-        android:layout_height="120dp"
+        android:layout_height="140dp"
         android:layout_marginTop="10dp"
         android:id="@+id/depression"
         android:layout_alignParentLeft="true"
@@ -65,7 +65,7 @@
         android:layout_below="@id/Virtualbp"/>
     <Button
         android:layout_width="160dp"
-        android:layout_height="120dp"
+        android:layout_height="140dp"
         android:layout_marginTop="10dp"
         android:onClick="aboutus"
         android:id="@+id/AboutUs"
@@ -77,41 +77,6 @@
         android:textColor="@android:color/white"
         android:layout_below="@id/BMI"/>
 
-    <com.google.android.gms.common.SignInButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/sign_in_button"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/AboutUs"
-        android:enabled="false"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:id="@+id/Sign_out_Button"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/AboutUs"
-        android:layout_toRightOf="@id/sign_in_button"
-        android:enabled="true"
-        android:background="#ffffff"
-        android:text="Sign Out"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:id="@+id/revoke_Access"
-        android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/AboutUs"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/Sign_out_Button"
-        android:enabled="true"
-        android:text="Revoke Access"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Sign_in_Status"
-        android:text=""/>
 </RelativeLayout>
 
 
