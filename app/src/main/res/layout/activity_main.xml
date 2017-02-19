@@ -76,7 +76,11 @@
         android:text="About US"
         android:textColor="@android:color/white"
         android:layout_below="@id/BMI"/>
-
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_button"
+        android:layout_below="@id/AboutUs" />
 
 </RelativeLayout>
 
