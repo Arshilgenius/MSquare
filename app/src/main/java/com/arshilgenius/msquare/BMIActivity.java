@@ -19,9 +19,20 @@ public class BMIActivity extends AppCompatActivity {
     public void bmiCalculate(View view){
 
         EditText wt = (EditText) findViewById(R.id.wt) ;
+
         double wt1 = Double.parseDouble( wt.getText().toString() );
+        if(wt1==0){
+            TextView v = (TextView) findViewById(R.id.bmitv);
+            v.setText("Enter Something");
+        }
         EditText ht = (EditText) findViewById(R.id.ht) ;
+
         double ht1 = Double.parseDouble( ht.getText().toString() );
+
+        if(ht1==0){
+            TextView v = (TextView) findViewById(R.id.bmitv);
+            v.setText("Enter Something");
+        }
         double bmi=wt1/(ht1*ht1);
         if(bmi<16){
             TextView v = (TextView) findViewById(R.id.bmitv);
