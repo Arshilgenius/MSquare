@@ -14,7 +14,7 @@
     tools:context="com.arshilgenius.msquare.MainActivity">
     <Button
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="140dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:id="@+id/order"
@@ -37,7 +37,7 @@
 
     <Button
         android:layout_width="160dp"
-        android:layout_height="140dp"
+        android:layout_height="130dp"
         android:layout_marginTop="10dp"
         android:id="@+id/Virtualbp"
         android:onClick="virtualbp"
@@ -50,7 +50,7 @@
         android:layout_below="@id/order"/>
     <Button
         android:layout_width="160dp"
-        android:layout_height="140dp"
+        android:layout_height="130dp"
         android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
         android:id="@+id/BMI"
@@ -63,7 +63,7 @@
         android:layout_below="@id/order"/>
     <Button
         android:layout_width="160dp"
-        android:layout_height="140dp"
+        android:layout_height="130dp"
         android:layout_marginTop="10dp"
         android:id="@+id/depression"
         android:layout_alignParentLeft="true"
@@ -76,7 +76,7 @@
         android:layout_below="@id/Virtualbp"/>
     <Button
         android:layout_width="160dp"
-        android:layout_height="140dp"
+        android:layout_height="130dp"
         android:layout_marginTop="10dp"
         android:onClick="aboutus"
         android:id="@+id/AboutUs"

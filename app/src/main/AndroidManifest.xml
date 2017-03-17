@@ -11,8 +11,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
@@ -42,6 +40,12 @@
         <activity
             android:name=".heartattack"
             android:label="HeartAttack First Aid" />
+        <activity android:name=".Splash" android:label="MSquare">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".sprain"
             android:label="Sprain First Aid" />
