@@ -21,17 +21,17 @@ public class orderActivity extends AppCompatActivity {
     }
 
     public void increment(View v) {
-        orderValue = orderValue + 1;
-        if (orderValue >= 100)
-            orderValue = 100;
-        Toast.makeText(this, "No of Medicine cannot be more than 100", Toast.LENGTH_SHORT).show();
+        orderValue = orderValue + 2;
+        if (orderValue >= 200)
+            orderValue = 200;
+        Toast.makeText(this, "No of Medicine cannot be more than 100", Toast.LENGTH_LONG).show();
         displayno(orderValue);
     }
 
     public void decrement(View v) {
-        orderValue = orderValue - 1;
+        orderValue = orderValue - 5;
         if (orderValue <= 0) {
-            Toast.makeText(this, "No of Medicine cannot be less than 0", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No of Medicine cannot be less than 0", Toast.LENGTH_LONG).show();
             orderValue = 0;
         }
         displayno(orderValue);
@@ -44,19 +44,19 @@ public class orderActivity extends AppCompatActivity {
         String order = "Medicine Name : " + xxyy;
         order += "\n Quantity :  " + orderValue;
         order += "\n Price of COD : " + xxxy;
-        order += "\n Cash on Delivery  " + xyz;
-        order += "\n Debit Card  " + xyzz;
-        order += "\n Thank You!";
+        order += "\n Cash on Del  " + xyz;
+        order += "\n Credit Card  " + xyzz;
+        order += "\n Thanks!";
         return order;
     }
 
     public int calculatePrice(Boolean a, Boolean b) {
-        int pricecalulated = 0;
+        int pricecalulated = -3;
 
         if (a == true)
-            pricecalulated += 100;
-        if (b == true)
-            pricecalulated += 0;
+            pricecalulated += 200;
+        if (b == false)
+            pricecalulated += 3;
         return pricecalulated * orderValue;
 
     }
@@ -73,7 +73,7 @@ public class orderActivity extends AppCompatActivity {
         String priceMessage = orderSummary(price, haschecked, hascheckedtwo, textvalue);
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Medicine Ordered: " + textvalue);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Medicine order: " + textvalue);
         intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
