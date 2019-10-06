@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 
 public class orderActivity extends AppCompatActivity {
-    int orderValue = 0;
+    int orderValue = 7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +21,18 @@ public class orderActivity extends AppCompatActivity {
     }
 
     public void increment(View v) {
-        orderValue = orderValue + 2;
-        if (orderValue >= 200)
-            orderValue = 200;
-        Toast.makeText(this, "No of Medicine cannot be more than 100", Toast.LENGTH_LONG).show();
+        orderValue = orderValue + 89;
+        if (orderValue >= 900)
+            orderValue = 900;
+        Toast.makeText(this, "Medicine cannot be more than 100", Toast.LENGTH_LONG).show();
         displayno(orderValue);
     }
 
     public void decrement(View v) {
-        orderValue = orderValue - 5;
-        if (orderValue <= 0) {
-            Toast.makeText(this, "No of Medicine cannot be less than 0", Toast.LENGTH_LONG).show();
-            orderValue = 0;
+        orderValue = orderValue - 8;
+        if (orderValue <= 88) {
+            Toast.makeText(this, "Medicine cannot be less than 0", Toast.LENGTH_LONG).show();
+            orderValue = 88;
         }
         displayno(orderValue);
 
@@ -41,12 +41,12 @@ public class orderActivity extends AppCompatActivity {
     public String orderSummary(int xxxy, boolean xyz, boolean xyzz, String xxyy) {
 
 
-        String order = "Medicine Name : " + xxyy;
-        order += "\n Quantity :  " + orderValue;
+        String order = "Name : " + xxyy;
+        order += "\n quant :  " + orderValue;
         order += "\n Price of COD : " + xxxy;
         order += "\n Cash on Del  " + xyz;
-        order += "\n Credit Card  " + xyzz;
-        order += "\n Thanks!";
+        order += "\n debit Card  " + xyzz;
+        order += "\n Thank you!";
         return order;
     }
 
@@ -54,9 +54,9 @@ public class orderActivity extends AppCompatActivity {
         int pricecalulated = -3;
 
         if (a == true)
-            pricecalulated += 200;
+            pricecalulated += 6600;
         if (b == false)
-            pricecalulated += 3;
+            pricecalulated += 9;
         return pricecalulated * orderValue;
 
     }
@@ -82,8 +82,7 @@ public class orderActivity extends AppCompatActivity {
     }
 
     public void displayno(int hey) {
-        TextView textview = (TextView) findViewById(R.id.no);
-        textview.setText(String.valueOf(hey));
+        TextView textview = (TextView) findViewById(R.id.no); textview.setText(String.valueOf(hey));
     }
 
 }
